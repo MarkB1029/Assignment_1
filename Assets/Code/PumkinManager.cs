@@ -18,6 +18,6 @@ public class PumpkinManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pumpkinText.text = "Pumkin Collection" + pumpkinCount.ToString();
+        pumpkinText.text = "Pumkin Collection: " + pumpkinCount.ToString();
     }
 }
