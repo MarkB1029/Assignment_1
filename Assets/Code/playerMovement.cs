@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class playerMovement : MonoBehaviour
@@ -18,7 +19,7 @@ public class playerMovement : MonoBehaviour
     private bool isFacingRight;
     private float horizontal;
 
-    public PumkinManager pm;
+    public PumpkinManager pm;
 
 
     bool grounded;
@@ -87,16 +88,20 @@ public class playerMovement : MonoBehaviour
             transform.localScale = localScale;
 
     }
-
+    
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Pumpkin"))
-        {
-           
-            Destroy(other.gameObject);
-            pm.pumkinCount++;
-        }
+      if (other.gameObject.CompareTag("Pumpkin"))
+      {
+
+       Destroy(other.gameObject);
+       pm.pumpkinCount++;
+
+      }
     }
+    
+
+
 }
 
 
