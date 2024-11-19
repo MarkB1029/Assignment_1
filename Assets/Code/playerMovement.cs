@@ -21,7 +21,6 @@ public class playerMovement : MonoBehaviour
 
     public PumpkinManager pm;
 
-
     bool grounded;
     // Start is called before the first frame update
     void Start()

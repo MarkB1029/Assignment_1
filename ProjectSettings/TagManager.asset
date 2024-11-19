@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Pumkin
   - Pumpkin
+  - Enemy
   layers:
   - Default
   - TransparentFX
